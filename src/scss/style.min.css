@@ -1,2 +1,2 @@
-html{font-size:62.5%}body{font-family:'Noto Sans JP', sans-serif}.header{background-image:-webkit-gradient(linear, left bottom, left top, from(rgba(213,104,247,0.5)), to(rgba(251,202,38,0.5)));background-image:linear-gradient(to top, rgba(213,104,247,0.5), rgba(251,202,38,0.5))}.header-title{font-size:3rem}.header-subtitle{font-size:1.5rem}
+html{font-size:62.5%}body{font-family:'Noto Sans JP', sans-serif}.header{background-image:-webkit-gradient(linear, left top, left bottom, from(#f99035), to(#f9935e));background-image:linear-gradient(to bottom, #f99035, #f9935e);text-align:center;height:15vh}.header-title{padding-top:0.8rem;font-size:5rem;line-height:10%;font-weight:bold}.header-subtitle{font-size:1.5rem;line-height:0%}
 /*# sourceMappingURL=style.min.css.map */

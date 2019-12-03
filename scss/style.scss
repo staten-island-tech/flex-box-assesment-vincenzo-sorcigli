@@ -8,16 +8,22 @@ body{
 
 .header{
     background-image: linear-gradient(
-        to top,
-    rgba(213, 104, 247, 0.5),
-    rgba(251, 202, 38, 0.5)
-    ), 
+      to bottom,
+    rgba(249, 144, 53, 1),
+    rgba(249, 147, 94, 1)
+    );
+    text-align: center;
+    height: 15vh;
 }
 
 .header-title{
-    font-size: 3rem
+    padding-top: 0.8rem;
+    font-size: 5rem;
+    line-height: 10%;
+    font-weight: bold;
 }
 
 .header-subtitle{
-    font-size: 1.5rem
+    font-size: 1.5rem;
+    line-height: 0%;
 }
