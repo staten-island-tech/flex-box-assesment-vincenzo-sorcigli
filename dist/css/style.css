@@ -3,8 +3,8 @@ html {
 }
 
 body {
-  background-color: rgba(255, 196, 140, 1);
   font-family: 'Noto Sans JP', sans-serif;
+  background-color: #ffbe4f;
 }
 
 .header {
@@ -12,6 +12,7 @@ body {
   background-image: linear-gradient(to bottom, #f99035, #f9935e);
   text-align: center;
   height: 15vh;
+  border: 3px solid black;
 }
 
 .header-title {
@@ -24,5 +25,20 @@ body {
 .header-subtitle {
   font-size: 1.5rem;
   line-height: 0%;
+}
+
+.trending-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 5rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.trending-images > img {
+  height: 35vh;
 }
 /*# sourceMappingURL=style.css.map */
