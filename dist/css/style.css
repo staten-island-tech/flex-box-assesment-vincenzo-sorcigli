@@ -8,20 +8,28 @@ html {
 
 body {
   font-family: 'Noto Sans JP', sans-serif;
-  background-color: #ffb055;
+  background-color: #FFE0B2;
 }
 
 .button {
   height: 5vh;
   width: 5vw;
+  border: 2px solid #F57F17;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFB74D), to(#FFCC80));
+  background-image: linear-gradient(to bottom, #FFB74D, #FFCC80);
+}
+
+.button:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFCC80), to(#FFB74D));
+  background-image: linear-gradient(to bottom, #FFCC80, #FFB74D);
 }
 
 .header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f99035), to(#f9935e));
-  background-image: linear-gradient(to bottom, #f99035, #f9935e);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF9800), to(#FFA726));
+  background-image: linear-gradient(to bottom, #FF9800, #FFA726);
   text-align: center;
   height: 21vh;
-  border: 3px solid black;
+  border: 3px solid #F57F17;
 }
 
 .header-title {
@@ -40,7 +48,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 5px;
 }
 
 .about > section {
@@ -49,6 +56,16 @@ body {
           flex-grow: 1;
   height: 20vh;
   width: 20vw;
+  padding: 5px;
+}
+
+.about-text {
+  font-size: 2rem;
+  text-align: justify;
+  text-justify: inter-word;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .trending-text {

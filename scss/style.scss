@@ -7,22 +7,39 @@ html{
 
 body{
     font-family: 'Noto Sans JP', sans-serif;
-    background-color: rgba(255, 176, 85, 1);
+    background-color: #FFE0B2;
 }
 
 .button{
   height: 5vh;
   width: 5vw;
+  border: 2px solid #F57F17;
+  background-image: linear-gradient(
+    to bottom,
+    #FFB74D,
+    #FFCC80
+  );
+
 }
+
+.button:hover{
+    background-image: linear-gradient(
+        to bottom,
+        #FFCC80,
+        #FFB74D
+      );
+}
+
 .header{
     background-image: linear-gradient(
       to bottom,
-    rgba(249, 144, 53, 1),
-    rgba(249, 147, 94, 1)
+      #FF9800,
+      #FFA726
     );
     text-align: center;
     height: 21vh;
-    border: 3px solid black;
+    border: 3px solid #F57F17;
+
 
 }
 
@@ -40,13 +57,24 @@ body{
 
 .about{
     display: flex;
-    margin: 5px
 }
 
 .about > section{
     flex-grow: 1;
     height: 20vh;
     width: 20vw;
+    padding: 5px;
+}
+
+.about-text{
+    font-size: 2rem;
+    text-align: justify;
+    text-justify: inter-word;
+    justify-content: center;
+}
+
+.about-buttons{
+
 }
 
 .trending-text{
