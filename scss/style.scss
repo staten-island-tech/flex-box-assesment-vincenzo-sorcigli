@@ -1,12 +1,19 @@
 html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-size: 62.5%;
 }
 
 body{
     font-family: 'Noto Sans JP', sans-serif;
-    background-color: rgba(255, 190, 79, 1);
+    background-color: rgba(255, 176, 85, 1);
 }
 
+.button{
+  height: 5vh;
+  width: 5vw;
+}
 .header{
     background-image: linear-gradient(
       to bottom,
@@ -14,14 +21,14 @@ body{
     rgba(249, 147, 94, 1)
     );
     text-align: center;
-    height: 15vh;
+    height: 21vh;
     border: 3px solid black;
 
 }
 
 .header-title{
     padding-top: 0.8rem;
-    font-size: 5rem;
+    font-size: 7rem;
     line-height: 10%;
     font-weight: bold;
 }
@@ -31,7 +38,59 @@ body{
     line-height: 0%;
 }
 
+.about{
+    display: flex;
+    margin: 5px
+}
+
+.about > section{
+    flex-grow: 1;
+    height: 20vh;
+    width: 20vw;
+}
+
+.trending-text{
+    text-align: center;
+    font-size: 4rem;    
+}   
+
 .trending-images{
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 15rem;
+}
+
+.trending-images > img{
+    height: 35vh;
+}
+
+.top-text{
+    text-align: center;
+    font-size: 4rem;    
+}   
+
+.top-images{
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 15rem;
+}
+
+.top-images > img{
+    height: 35vh;
+}
+
+.new-text{
+    text-align: center;
+    font-size: 4rem;    
+}   
+
+.new-images{
     display: flex;
     justify-content: space-around;
     margin: 5rem;
@@ -39,6 +98,6 @@ body{
     margin-right: 10rem;
 }
 
-.trending-images > img{
+.new-images > img{
     height: 35vh;
 }
