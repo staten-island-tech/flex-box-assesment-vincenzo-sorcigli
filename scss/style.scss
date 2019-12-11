@@ -1,3 +1,9 @@
+@import "./_colors.scss"
+
+@function color($color-name){
+    @return map-get($colors, $color-name);
+}
+
 html{
     margin: 0;
     padding: 0;
@@ -7,48 +13,15 @@ html{
 
 body{
     font-family: 'Noto Sans JP', sans-serif;
-    background-color: #FFE0B2;
-}
-
-/* colors to import begin*/
-
-$colors: (
-    black: #000000
-    white: #ffffff
-    orange-50: #FFF3E0
-    orange-100:#FFE0B2
-    orange-200:#FFCC80
-    orange-300:#FFB74D
-    orange-400:#FFA726
-    orange-500:#FF9800
-    orange-600:#FB8C00
-    orange-700:#F57C00
-    orange-800:#EF6C00
-    orange-900:#E65100
-    amber-50: #FFF8E1
-    amber-100:#FFECB3
-    amber-200:#FFE082
-    amber-300:#FFD54F
-    amber-400:#FFCA28
-    amber-500:#FFC107
-    amber-600:#FFB300
-    amber-700:#FFA000
-    amber-800:#FF8F00
-    amber-900:#FF6F00
-);
-
-/*colors to import end*/
-
-@function color($color-name){
-    @return map-get($colors, $color-name);
+    background-color: color(orange-100);
 }
 
 .button{
-  border: 2px solid #F57F17;
+  border: 2px solid color(orange-700);
   background-image: linear-gradient(
     to bottom,
-    #FFB74D,
-    #FFCC80
+    color(orange-300),
+    color(orange-200)
   );
   width: 100%;
   height: 100%;
@@ -59,20 +32,20 @@ $colors: (
 .button:hover{
     background-image: linear-gradient(
         to bottom,
-        #FFCC80,
-        #FFB74D
+        color(orange-200),
+        color(orange-300)
       );
 }
 
 .header{
     background-image: linear-gradient(
       to bottom,
-      #FF9800,
-      #FFA726
+      color(orange-500),
+      color(orange-400)
     );
     text-align: center;
     height: 21vh;
-    border: 3px solid #F57F17;
+    border: 3px solid color(yellow-900);
 }
 
 .header-title{
